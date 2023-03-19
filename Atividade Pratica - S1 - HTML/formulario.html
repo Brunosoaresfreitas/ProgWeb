@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <!-- Criação de uma div para o título da página -->
+    <div>
+        <!-- Tag h1 para criação do título e a tag center para centralizar o conteúdo -->
+        <h1><center>Formulário de cadastro de remédio</center></h1>
+    </div>
+    <!-- Criação de uma linha horizontal na página -->
+    <hr>
+    <!-- Qubera de linha -->
+    <br>
+
+    <div>
+        <!-- Criação de um formulário -->
+        <form>
+            <div>
+                <!-- A tag label utilizada para rotular o elemento nome do remédio do formulário -->
+                <label for="name"><b>Nome do Remédio:</b></label>
+                <!-- Tag input usada para criar um campo de entrada de dados no 
+                formulário, e o atributo placeholder para exibir a mensagem dentro
+                do campo do input -->
+                <input type="text" id="name" placeholder="Digite o nome do remédio">
+            </div>
+            <br>
+            
+            <div>
+                <!-- A tag label utilizada para rotular o elemento descrição do formulário -->
+                <label for="descrição"><b>Descrição: </b></label>
+                <!-- Tag input usada para criar um campo de entrada de dados no 
+                formulário, e o atributo placeholder para exibir a mensagem dentro
+                do campo do input -->
+                <input type="textarea" id="descricao" placeholder="Digite a descrição do remédio">
+            </div>
+            <br>
+
+            <div>
+                <!-- A tag label utilizada para rotular o elemento dosagem do formulário -->
+                <label for="dosagem"><b>Dosagem: </b></label>
+                <!-- Tag input usada para criar um campo de entrada de dados no 
+                formulário, e o atributo placeholder para exibir a mensagem dentro
+                do campo do input -->
+                <input type="textarea" id="dosagem" placeholder="Digite a dosagem">
+            </div>
+            <br>
+            
+            <div>
+                <!-- A tag label utilizada para rotular o elemento fornecedor do formulário -->
+                <label for="fornecedor"><b>Fornecedor: </b></label>
+                <!-- Tag select para criar um menu de para selecionar uma opção -->
+                <select>
+                    <!-- Opções que poderão ser selecionadas dentro do select -->
+                    <option value="">Selecione o fornecedor</option>
+                    <option value="vitamedic">Vitamedic</option>
+                    <option value="geolab">Geolab</option>
+                    <option value="teuto">Teuto</option>
+                </select>
+
+            </div>
+            <br>
+
+            <div>
+                <!-- A tag label utilizada para rotular o elemento tarja do formulário -->
+                <label for="tarja"><b>Tarja: </b></label>
+                <span></span>
+                    <!-- Criação dos inputs do tipo radio button, na qual deverá ser 
+                    selecionado apenas um dos radio buttons -->
+                    <input type="radio" id="t-amarela" name="tarja" value="amarela">
+                    <label for="amarela">Amarela</label>
+                  
+                    <input type="radio" id="t-vermelha" name="tarja" value="vermelha">
+                    <label for="vermelha">Vermelha</label>
+                  
+                    <input type="radio" id="t-preta" name="tarja" value="preta">
+                    <label for="preta">Preta</label>
+            </div>
+            <br>
+
+            <div>
+                <!-- A tag label utilizada para rotular o elemento categoria do formulário -->
+                <label for="categoria"><b>Categoria: </b></label>
+                <!-- Tag select para criar um menu de para selecionar uma opção -->
+                <select>
+                    <!-- Opções que poderão ser selecionadas dentro do select -->
+                    <option value="">Selecione a categoria do medicamento</option>
+                    <option value="antibioticos">Antibióticos</option>
+                    <option value="antihipertensivo">Antihipertensivos</option>
+                    <option value="antipsicóticos">Antipsicóticos</option>
+                    <option value="anticoagulantes">Anticoagulantes</option>
+                    <option value="analgesicos">Analgésicos</option>
+                    <option value="antiinflamatorio">Anti-inflamatórios</option>
+                    <option value="antialergico">Antialérgico</option>
+                </select>
+            </div>
+            <!-- Quebra de linha -->
+            <br>
+
+            <!-- Criação de um botão do tipo submit (enviar) para enviar o formulário-->
+            <button type="submit"><b>Enviar</b></button>
+
+          </form>     
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+</head>
+<body>
+    <!-- A tag h1 foi utilizada para criar o título da página e a tag center foi
+    utilizada para centralizar o texto -->
+    <center><h1>Menu</h1></center>
+    <!-- A tag hr cria uma linha divisória na página -->
+    <hr>
+    <!-- Utilizando a tag nav para criar um menu de navegação -->
+    <nav>
+        <!-- Criaçãao da lista não ordenada para inserção dos elementos do menu -->
+        <ul>
+            <!-- Criação dos elementos do menu, utilizando a tag a para redirecionar
+            para a página desejada -->
+            <li><a href="index.html">Medicamentos - Página Inicial</a></li>
+            <li><a href="tabela.html">Tabela de Medicamentos</a></li>
+            <li><a href="formulario.html">Formulário para Cadastro de Medicamentos</a></li>
+            <li><a href="imagens.html">Imagens</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <div>
+        <!-- Centralizar o conteúdo -->
+        <center>
+            <h2>Ranking dos maiores laboratórios farmacêuticos do Brasil</h2>
+            
+            <!-- Criação de uma tabela utilizando o border="9" para estilização,
+            o atributo cellpading para definir o espaço entre o conteúdo
+            de uma célula e a borda da célula e o atributo cellspacing para
+            definir o espaço entre as células da tabela.-->
+            <table border="9" cellpadding ="10" cellspacing="5">
+                <!-- Criação do head da tabela -->
+                <thead>
+                    <tr>
+                        <!-- Inserindo o nome das colunas da tabela -->
+                        <th>Ranking</th>
+                        <th>Laboratório</th>
+                        <th>Vendas unidades (em milhões)</th>
+                        <th>Cresc.%</th>
+                    </tr>
+                </thead>
+                <!-- Criação do corpo da tabela -->
+                <tbody>
+                    <tr>
+                        <!-- Criação das linhas da tabela e dos conteúdos das linhas-->
+                        <td>1</td>
+                        <td>Neo Química</td>
+                        <td>463,6</td>
+                        <td>15,35</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cimed</td>
+                        <td>389,6</td>
+                        <td>7,53</td>
+                    </tr>                    
+                    <tr>
+                        <td>3</td>
+                        <td>EMS</td>
+                        <td>238,2</td>
+                        <td>-0,69</td>
+                    </tr>                    
+                    <tr>
+                        <td>4</td>
+                        <td>Eurofarma</td>
+                        <td>238,2</td>
+                        <td>4,05</td>
+                    </tr>                    
+                    <tr>
+                        <td>5</td>
+                        <td>Aché</td>
+                        <td>216</td>
+                        <td>14,66</td>
+                    </tr>                    
+                    <tr>
+                        <td>6</td>
+                        <td>Teuto</td>
+                        <td>214,3</td>
+                        <td>17</td>
+                    </tr>                    
+                    <tr>
+                        <td>7</td>
+                        <td>União Química</td>
+                        <td>186,1</td>
+                        <td>7,61</td>
+                    </tr>                    
+                    <tr>
+                        <td>8</td>
+                        <td>Medley</td>
+                        <td>174,7</td>
+                        <td>1,55</td>
+                    </tr>                    
+                    <tr>
+                        <td>9</td>
+                        <td>Sanofi</td>
+                        <td>157</td>
+                        <td>5,4</td>
+                    </tr>                    
+                    <tr>
+                        <td>10</td>
+                        <td>Geolab</td>
+                        <td>120,9</td>
+                        <td>19,56</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Fonte: IQVIA</p>
+        </center>
+        <hr>
+    </div>
+
+    <div>
+        <!-- Tag center para centralizar o conteúdo -->
+        <center>
+            <!-- Tag h2 para criação de um subtítulo -->
+            <h2>Medicamentos mais consumidos no Brasil</h2>
+            <!-- Inserção de imagens através da tag img passando o caminho no atributo src -->
+            <img src="images/dorflex.jpg" alt="Dorflex" width="360" height="250">
+            <img src="images/xarelto.png" alt="Xarelto" width="360" height="250">
+            <img src="images/selozok.png" alt="Selozok" width="360" height="250">
+            <img src="images/neosaldina.webp" alt="Neolsadina" width="360" height="250">
+            <img src="images/torsilax.jpg" alt="Torsilax" width="360" height="250">
+        </center>
+        <div>
+            <!-- Criação de uma lista ordenada -->
+            <ol>
+                <!-- Inserção dos itens da lista ordenada -->
+                <li>Dorflex (relaxante muscular) – R$ 470,7 milhões</li>
+                <li>Xarelto (anticoagulante) – R$ 286,8 milhões</li>
+                <li>Selozok (redução da pressão arterial) – R$ 230,3 milhões</li>
+                <li>Neosaldina (analgésico) – R$ 222,4 milhões</li>
+                <li>Torsilax (relaxante muscular) – R$ 215,3 milhões</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+
+    <div>
+        <!-- Tag center para centralizar o conteúdo -->
+        <center>
+            <!-- Tag h1 para criação de um título -->
+            <h1>Pesquisar por um remédio específico</h1>
+        </center>
+        <br>
+
+        <!-- Criação de um formulário -->
+        <form action="#" method="get">
+            <!-- Tag label utilizada para rotular o elemento do formulário -->
+            <label for="search">Remédio:</label>
+            <!-- Tag input usada para criar um campo de entrada de dados no 
+            formulário, e o atributo placeholder para exibir a mensagem dentro
+            do campo do input -->
+            <input type="text" placeholder="Digite o nome do remédio">
+            <br><br>
+
+            <!-- Tag label utilizada para rotular o elemento do formulário -->
+            <label for="newsletter">Receber novidades por e-mail:</label>
+            <!-- Criação de um checkbox que é associado ao elemento do label-->
+            <input type="checkbox">
+            <!-- Quebra de linha -->
+            <br><br>
+            <!-- Criação de um botão do tipo submit (enviar) para pesquisar-->
+            <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+</body>
+</html>
