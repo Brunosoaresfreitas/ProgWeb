@@ -1,0 +1,141 @@
+<!-- 
+    Curso de Engenharia de Software - UniEVANGÉLICA 
+    Disciplina de Programação Web 
+    Dev: Bruno Henrique Soares de Freitas 
+    20/03/2003 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <!-- Imports dos arquivos css que serão utilizados -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- Criação do header da página -->
+    <header class="header">
+      <div class="logo">
+        <!-- Inserção da imagem que será o logo da página -->
+        <img src="images/logo.jpg" alt="Logo do site">
+      </div>
+      
+      <!-- Criação de um menu de navegação -->
+      <nav class="link-menu">
+        <!-- Criação de uma lista ordenada para inserção dos itens do menu -->
+        <ul>
+          <!-- Inserção dos itens do menu, com a tag a utilizando o atributo href para redirecionar a página desejada -->
+          <li><a href="link.html">Home</a></li>
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="tabela.html">Tabela de Medicamentos</a></li>
+          <li><a href="formulario.html">Formulário para Cadastro de Medicamentos</a></li>
+          <li><a href="imagens.html">Imagens</a></li>
+          </ul>
+      </nav>
+        <div class="search">
+        <!-- Criação de um input com o atributo placeholder que será o que estará escrito dentro do input -->
+          <input type="text" placeholder="Pesquisar...">
+          <!-- Criação de um botão para pesquisar -->
+          <button>Pesquisar</button>
+        </div>
+    </header>
+
+    <div class="card">
+        <div>
+          <!-- Criação do título do formulário utilizando a tag h1 -->
+          <h1>Cadastre um medicamento</h1>
+        </div>
+        <!-- Criação do formulário -->
+        <form>
+          <!-- A tag label utilizada para rotular o elemento nome do remédio do formulário -->
+          <!-- Tag input usada para criar um campo de entrada de dados no 
+          formulário, e o atributo placeholder para exibir a mensagem dentro
+          do campo do input -->
+          <label for="name">Nome do Remédio:</label>
+          <input type="text" id="name" placeholder="Digite o nome do remédio">
+      
+          <label for="descricao">Descrição:</label>
+          <input type="textarea" id="descricao" placeholder="Digite a descrição do remédio">
+      
+          <label for="dosagem">Dosagem:</label>
+          <input type="textarea" id="dosagem" placeholder="Digite a dosagem">
+      
+          <label for="fornecedor">Fornecedor:</label>
+          <!-- A tag select foi utilizado para criar um menu de opções para selecionar, na qual deverá ser selecionado
+          apenas uma opção -->
+          <select>
+            <!-- Criação das opções disponíveis para serem selecionadas -->
+            <option value="">Selecione o fornecedor</option>
+            <option value="vitamedic">Vitamedic</option>
+            <option value="geolab">Geolab</option>
+            <option value="teuto">Teuto</option>
+          </select>
+      
+          <label for="tarja">Tarja:</label>
+          <!-- Criação dos inputs do tipo radio button, na qual deverá ser selecionado apenas um dos radio buttons -->
+          <div class="radio-group">
+            <input type="radio" id="t-amarela" name="tarja" value="amarela">
+            <label for="t-amarela">Amarela</label>
+      
+            <input type="radio" id="t-vermelha" name="tarja" value="vermelha">
+            <label for="t-vermelha">Vermelha</label>
+      
+            <input type="radio" id="t-preta" name="tarja" value="preta">
+            <label for="t-preta">Preta</label>
+          </div>
+      
+          <label for="categoria">Categoria:</label>
+          <!-- A tag select foi utilizado para criar um menu de opções para selecionar, na qual deverá ser selecionado
+          apenas uma opção -->
+          <select>
+            <!-- Criação das opções disponíveis para serem selecionadas -->
+            <option value="">Selecione a categoria do medicamento</option>
+            <option value="antibioticos">Antibióticos</option>
+            <option value="antihipertensivo">Antihipertensivos</option>
+            <option value="antipsicóticos">Antipsicóticos</option>
+            <option value="anticoagulantes">Anticoagulantes</option>
+            <option value="analgesicos">Analgésicos</option>
+            <option value="antiinflamatorio">Anti-inflamatórios</option>
+            <option value="antialergico">Antialérgico</option>
+          </select>
+          
+          <!-- Tag center para centralização do botão -->
+          <center>
+            <!-- Criação de um botão do tipo submit que servirá para enviar o formulário -->
+            <button type="submit">Enviar</button>
+          </center>
+          
+        </form>
+      </div>
+    <!-- Criação do rodapé da página -->
+    <footer>
+      <!-- Criação de uma div com a classe container que será utilizada no css para estilização -->
+      <div class="container">
+          <div class="contact-info">
+              <!-- Tag h4 para definir o tamanho do texto -->
+              <h4>Contato</h4>
+              <!-- Criação de uma lista não ordenada -->
+              <ul>
+                  <!-- Inserção de dados na lista criada -->
+                  <li>Telefone: (11) 1234-5678</li>
+                  <li>Email: brunosoaresfreitas@meusite.com</li>
+              </ul>
+          </div>
+          <!-- Criação de uma div que será estilizada pela classe search-box -->
+          <div class="search-box">
+              <!-- Criação de um formulário -->
+              <form>
+                  <!-- Input para digitar uma pesquisa -->
+                  <input type="text" placeholder="Digite sua pesquisa aqui">
+                  <!-- Criação de um botão para buscar o que foi pesquisado -->
+                  <button type="submit">Buscar</button>
+              </form>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>

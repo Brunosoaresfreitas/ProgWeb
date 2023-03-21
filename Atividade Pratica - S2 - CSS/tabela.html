@@ -2,7 +2,7 @@
     Curso de Engenharia de Software - UniEVANGÉLICA 
     Disciplina de Programação Web 
     Dev: Bruno Henrique Soares de Freitas 
-    15/03/2003 
+    20/03/2003 
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -11,21 +11,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de medicamentos</title>
+    <!-- Imports dos arquivos css utilizados para estilização -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+    <!-- Criação do header da página -->
+    <header class="header">
+        <div class="logo">
+          <!-- Inserção da imagem que será o logo da página -->
+          <img src="images/logo.jpg" alt="Logo do site">
+        </div>
+        
+        <!-- Criação de um menu de navegação -->
+        <nav class="link-menu">
+          <!-- Criação de uma lista ordenada para inserção dos itens do menu -->
+          <ul>
+            <!-- Inserção dos itens do menu, com a tag a utilizando o atributo href para redirecionar a página desejada -->
+            <li><a href="link.html">Home</a></li>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="tabela.html">Tabela de Medicamentos</a></li>
+            <li><a href="formulario.html">Formulário para Cadastro de Medicamentos</a></li>
+            <li><a href="imagens.html">Imagens</a></li>
+            </ul>
+        </nav>
+          <div class="search">
+          <!-- Criação de um input com o atributo placeholder que será o que estará escrito dentro do input -->
+            <input type="text" placeholder="Pesquisar...">
+            <!-- Criação de um botão para pesquisar -->
+            <button>Pesquisar</button>
+          </div>
+      </header>
+
+    <section>
     <!-- A tag h1 foi utilizada para criar o título da página e a tag center foi
     utilizada para centralizar o texto -->
-    <h1><center>Tabela de medicamentos</center></h1>
-    <!-- A tag hr cria uma linha divisória na página e o br quebra a linha -->
-    <hr><br>
-    <div>
+    <h1>Tabela de medicamentos</h1>
+    <div class="tbl-header">
         <!-- Tag center para centralizar a tabela que será criada -->
-        <center>
-            <!-- Criação de uma tabela utilizando o border="2" para estilização,
-            o atributo cellpading para definir o espaço entre o conteúdo
-            de uma célula e a borda da célula e o atributo cellspacing para
-            definir o espaço entre as células da tabela.-->
-            <table border="2" cellpadding ="10" cellspacing="5">
+            <table border="0" cellpadding ="0" cellspacing="0">
                 <!-- Criação do head da tabela -->
                 <thead>
                     <tr>
@@ -39,6 +64,10 @@
                         <th>Categoria</th>
                     </tr>
                 </thead>
+            </table>
+        </div>
+        <div>
+            <table class="tbl-content">
                 <!-- Criação do corpo da tabela -->
                 <tbody>
                     <tr>
@@ -98,7 +127,7 @@
                     </tr>
                 </tbody>
             </table>
-        </center>
-    </div>
+        </div>
+    </section>
 </body>
 </html>

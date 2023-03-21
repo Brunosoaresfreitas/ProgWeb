@@ -1,0 +1,101 @@
+/* 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Bruno Henrique Soares de Freitas 
+20/03/2003  
+*/
+
+   /* Estilização dos elementos h1
+   font-size: tamanho da fonte
+   color: cor da fonte
+   text-transform: transforma o texto em letras maiúsculas
+   text-align: alinha o texto no centro
+   font-weight: define a intensidade da fonte
+   margin-bottom: define a margem do inferior do elemento */
+   h1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+  
+  }
+  
+  /* Estilização da table
+  width: tamanho 100%, ocupará 100% da tela
+  table-layout: fixed define que a largura das colunas serão fixas */
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  /* Estilização da classe tbl-header
+  background-color: define a cor de fundo */
+  .tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Estilização da classe tbl-content
+  height: define a altura
+  overflow-x: a propriedade "overflow-x" define como o conteúdo que ultrapassa a largura do elemento será tratado na direção horizontal.  
+  margin-top: define a margem superior do elemento
+  border: a borda terá o tamanho de 1px, será sólida e terá a cor passada no rgba*/
+  .tbl-content {
+    height: 240px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Estilização do th da tabela
+  padding: define os espaçamentos internos da tabela (20px para superior e inferior e 15 px direita e esquerda)
+  text-align: alinha o texto na esquerda
+  font-weight: define a intensidade da fonte
+  font-size: define o tamanho da fonte
+  color: define a cor do texto
+  text-transform: coloca todas as letras em maiúsculo*/
+  th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  /* Estilização do td da tabela
+  padding: utilizado para definir o espaçamento do elemento, como foi utilizado somente um valor será aplicado para os 4 espaçamentos (superior, inferior, direita e esquerda)
+  text-align: para alinhar o texto a esquerda
+  vertical-align: define o alinhamento vertical que foi definido no meio
+  font-weight: define a intensidade da fonte
+  font-size: define o tamanho da fonte
+  border-bottom: define a borda inferior, que será sólida, terá 1px de tamanho e uma cor que foi passado pelo rgba */
+  td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Import de uma fonte */
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+  
+  /* Estilização do html
+  background para definir a cor do background, que foi utilizado um rgb
+  e o background image que foi utilizado um gradient */
+  html {
+    background: rgb(36,0,0);
+    background-image: linear-gradient( 178.2deg,  rgba(118,8,23,1) 10.9%, rgba(158,12,33,1) 62.6% );    width: 100%;
+  }
+
+  /* Estilização da section na qual foi definido o atributo margin para controlar as margens do elemento
+  como foi utilizado somente um valor, se aplicará as 4 margens (superior, inferior, direita e esquerda) */
+  section {
+    margin: 50px;
+  }
+  
+  

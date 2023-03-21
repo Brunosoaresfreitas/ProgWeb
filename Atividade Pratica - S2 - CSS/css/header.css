@@ -1,0 +1,159 @@
+/* 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Bruno Henrique Soares de Freitas 
+20/03/2003  
+*/
+
+/* Estilização do html e body
+margin: 0 de espaçamento externo para todos os lados
+padding: 0 de espaçamento interno para todos os lados
+font-family: define como primária a fonte Roboto
+font-weight: define a intensidade da fonte */
+html, body{
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+}
+
+/* Estilização do header
+  display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+  justify-content: coloca um espaço entre os elementos
+  padding: espaçamento interno de 10px para todos os lados
+  background-color: define a cor de fundo
+  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* centraliza verticalmente */
+  padding: 10px;
+  background-color: #e61c29;
+}
+
+/* Estilização da tag img dentro da classe logo
+border-radius: cria uma borda arredondada de 50px
+width: define um tamanho fixo de 100px
+height: define uma altura fixa de 100px
+margin-right: define um espaçamento externo a direita de 10px */
+.logo img {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+/* Estilização da tag h1 dentro da classe logo
+  display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+  margin: define que não haverá espaçamento externo entre os elementos
+  */
+.logo h1 {
+  display: flex;
+  margin: 0;
+}
+
+/* Estilização da tag ul dentro da tag nav dentro da classe header
+   display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+  list-style: none - elimina o estilo da lista
+  margin e padding = 0: define que não haverá espaçamento nem externo e nem interno entre os elementos
+   */
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilização da tag li dentro da tag nav dentro da classe header
+  margin: define um espaçamento externo de 0px para cima e para baixo e 10px para a direita e esquerda */
+.header nav li {
+  margin: 0 10px;
+}
+
+/* Estilização da tag a dentro de nav dentro da classe header
+   display: block - é usado para fazer com que o elemento seja exibido como um bloco na página, ocupando toda a largura disponível do seu contêiner pai
+  padding: define um espaçamento interno de 10px para todos os lados
+  text-decoration: elimina a decoração do link (a linha sublinada)
+  color: define a cor da fonte */
+.header nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilização da tag a dentro de nav dentro da classe header quando o mouse estiver em cima
+background-color: define a cor de fundo
+color: define a cor da fonte
+border-radius: cria uma borda arredondada de 50px */
+.header nav a:hover {
+  background-color: #ffffff;
+  color: #e61c29;
+  border-radius: 50px;
+}
+
+/* Estilização da classe search
+  display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+  justify-content: é usado para alinhar os itens flexíveis ao final do container, ou seja, no extremo direito do eixo principal.
+  */
+.search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* centraliza verticalmente */
+}
+
+/* Estilização do input do tipo texto dentro da classe search
+padding: define um espaçamento interno de 5px para todos os lados
+border: cria uma borda do tamanho de 1px, sólida e com a cor definida
+border-radius: cria uma borda arredondada de 45px
+margin-right: cria um espaçamento externo a direita de 5px */
+.search input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 45px;
+  margin-right: 5px;
+
+}
+
+ /* Estilização do button dentro da classe search
+  padding: define um espaçamento interno de 5px para todos os lados
+  font-size: define um tamanho de 12px para a fonte
+  text-transform: deixa todos os caracteres maiúsculos
+  letter-spacing: define um espaçamento de 2.5px entre cada letra
+  font-weight: define a intensidade da fonte
+  color: define a cor da fonte
+  background: define a cor de fundo do botão
+  border: none - elimina a borda
+  border-radius: cria uma borda arredondada de 45px
+  box-shadow:  cria uma sombra no elemento com o tamnho e cor definida
+  transition: adiciona um efeito de transição com duração de 0.3segundos e o ease controla a rapides que ocorre
+  cursor: pointer indica que o elemento é "clicável"
+  outline: remove a borda de destaque (outline) do elemento quando ele é clicado ou focado*/
+.search button {
+  padding: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000000;
+  background: #ffffff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+ /* Estilização o botão quando o mouse estiver em cima dele
+  background-color: a cor passa a ser a definida
+  box-shadow: cria uma sombra com o tamanho definido a cor informada
+  color: define a cor da fonte
+  transform: indica que o elemento será movido 7 pixels para cima em relação à sua posição original.*/
+.search button:hover {
+  background-color: #080808;
+  box-shadow: 0px 15px 20px rgba(209, 58, 12, 0.884);
+  color: #ffffff;
+  transform: translateY(-7px);
+}
+    

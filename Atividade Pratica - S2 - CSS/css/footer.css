@@ -1,0 +1,118 @@
+/* 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Bruno Henrique Soares de Freitas 
+20/03/2003  
+*/
+
+/* Estilização do footer
+background-color: cor de fundo
+color: cor da fonte
+padding: espaçamento interno dos elementos (20px superior e inferior 0 px direita e esquerda) */
+footer {
+    background-color: #c72121;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  /* Estilização da classe container que está dentro de footer
+  display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+  justify-content: coloca um espaço entre os elementos
+  align-items: alinhados no centro */
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilização do elemento h4 que está na classe contact-info
+  margin: define o espaçamento externo dos elementos
+  padding: define o espaçamento interno dos elementos */
+  .contact-info h4{
+      margin: 0;
+      padding: 10px;
+  }
+
+  /* Estilização do elemento ul que está na classe contact-info
+  list-style: limpao estilo da lista
+  margin: define o espaçamento externo dos elementos (0 px para superior, inferior, direita e esquerda)
+  padding: define o espaçamento interno dos elementos (10 px para superior, inferior, direita e esquerda)*/
+  .contact-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  /* Estilização do elemento li que está na classe contact-info 
+  margin-bottom: define 5px de espaçamento interno inferior*/
+  .contact-info li {
+    margin-bottom: 5px;
+  }
+  
+  /* Estilização da classe search-box
+  display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+  justify-content: é usado para alinhar os itens flexíveis ao final do container, ou seja, no extremo direito do eixo principal.
+  align-items: alinha os itens no centro verticalmente
+  padding-right: define o espaçamento interno a direita do elemento*/
+  .search-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* centraliza verticalmente */
+    padding-right: 80px;
+  }
+  
+  /* Estilização do input de tipo texto dentro da classe search-box
+  padding: define um espaçamento interno de 5px para todos os lados 
+  border: define uma borda de 1px, sólida e com a cor especificada
+  border-radius: cria uma borda arredondada de 45px
+  margin-right: cria um espaçamento externo a direita do elemento de 5px*/
+  .search-box input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 45px;
+    margin-right: 5px;
+  
+  }
+  
+  /* Estilização do button dentro da classe search-box
+  padding: define um espaçamento interno de 5px para todos os lados
+  font-size: define um tamanho de 12px para a fonte
+  text-transform: deixa todos os caracteres maiúsculos
+  letter-spacing: define um espaçamento de 2.5px entre cada letra
+  font-weight: define a intensidade da fonte
+  color: define a cor da fonte
+  background: define a cor de fundo do botão
+  border: none - elimina a borda
+  border-radius: cria uma borda arredondada de 45px
+  box-shadow:  cria uma sombra no elemento com o tamnho e cor definida
+  transition: adiciona um efeito de transição com duração de 0.3segundos e o ease controla a rapides que ocorre
+  cursor: pointer indica que o elemento é "clicável"
+  outline: remove a borda de destaque (outline) do elemento quando ele é clicado ou focado*/
+  .search-box button {
+    padding: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000000;
+    background: #ffffff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Estilização o botão quando o mouse estiver em cima dele
+  background-color: a cor passa a ser a definida
+  box-shadow: cria uma sombra com o tamanho definido a cor informada
+  color: define a cor da fonte
+  transform: indica que o elemento será movido 7 pixels para cima em relação à sua posição original.*/
+  .search-box button:hover {
+    background-color: #080808;
+    box-shadow: 0px 15px 20px rgba(209, 58, 12, 0.884);
+    color: #ffffff;
+    transform: translateY(-7px);
+  }
+      

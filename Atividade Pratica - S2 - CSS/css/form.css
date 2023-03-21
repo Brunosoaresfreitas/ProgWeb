@@ -1,0 +1,173 @@
+/* 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Bruno Henrique Soares de Freitas 
+20/03/2003  
+*/
+
+/* Estiliza a classe card
+padding: define um espaçamento interno entre os elementos de 20px para todas as direções
+width: define um tamanho fixo de 550px
+margin: 0 auto - serve para alinhar o elemento ao centro
+border: none - remove a borda
+border-radius: cria uma borda arredondada de 45px
+box-shadow: cria uma sobra com o tamanho e cor informada
+display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+flex-direction: direção do display informado, no caso abaixo em colunas
+justify-content: conteúdo colocado no centro
+margin-bottom: espaçamento externo entre os elementos de 25px para todas as direções
+ */
+.card {
+    padding: 20px;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 35px;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  /* Estilização do h1 dentro da classe card
+  text-align: alinha o texto no centro
+  font-size: define o tamanho de 2.5em para a fonte
+  color: define a cor da fonte */
+  .card h1
+  {
+    text-align: center;
+    font-size: 2.5em;
+    color:#eb390d;
+  }
+
+  /* Estilização do label dentro da classe card
+  display: block - é usado para fazer com que o elemento seja exibido como um bloco na página, ocupando toda a largura disponível do seu contêiner pai
+  margin-bottom: define um espaçamento externo entre os elementos de 10px para todos os lados */
+  .card label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilização do input, cardtextarea e do select dentro da classe card
+   display: block - é usado para fazer com que o elemento seja exibido como um bloco na página, ocupando toda a largura disponível do seu contêiner pai
+   width: define o tamanho fixo de 525 px
+   padding: define um espaçamento interno de 10px entre os elementos para todas as direções
+   border-radius: cria uma borda arredondada de 10px
+   border: cria uma borda de 1px, sólida e com a cor definida
+   margin-bottom: cria uma espaçamento inferior externo de 20px*/
+  .card input,
+  .card cardtextarea,
+  .card select {
+    display: block;
+    width: 525px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilização do input do tipo radio dentro da classe card
+  display: inline-block: é usado para fazer com que o elemento seja exibido como um bloco com formatação de linha
+  margin-right: cria um espaçamento externo a direita de 10px */
+  .card input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Estilização da classe radio-group
+  display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+  flex-direction: direção do display informado, no caso abaixo em linhas
+  align-items: alinha os itens ao centro
+  gap: é usada para definir o espaço entre as colunas e as linhas de um grid ou de um flex container.  */
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Estilização do input do tipo radio dentro da classe radio-group
+  display: none - oculta o elemento da página */
+  .radio-group input[type="radio"] {
+    display: none;
+  }
+  
+  /* Estilização da label dentro da classe radio-group
+   display: inline-block: é usado para fazer com que o elemento seja exibido como um bloco com formatação de linha
+   padding: define um espaçamento interno superior e inferior de 10px e esquerda e direita de 15px
+   border-radius: cria uma borda arredondada de 20px
+   border: cria uma borda de 1px, sólida e com a cor definida
+   font-size: define o tamanho de 14px para a fonte
+   cursor: pointer - indica que é um elemento "clicável"*/
+  .radio-group label {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Estilização da label dentro da classe radio-group quando o mouse estiver por cima 
+  background-color: a cor de fundo passa a ser a definida*/
+  .radio-group label:hover {
+    background-color: #ccc;
+  }
+  
+  /* Estilização do input do tipo radio da classe radio-group quando estiver checado
+  background-color: a cor de fundo passa a ser a definida
+  color: a cor da fonte passa a ser a definida */
+  .radio-group input[type="radio"]:checked + label {
+    background-color: #c9330e;
+    color: #fff;
+  }
+  
+  /* Estilização do button dentro da classe card
+  padding: define um espaçamento interno de 5px para todos os lados
+  font-size: define um tamanho de 12px para a fonte
+  text-transform: deixa todos os caracteres maiúsculos
+  letter-spacing: define um espaçamento de 2.5px entre cada letra
+  font-weight: define a intensidade da fonte
+  color: define a cor da fonte
+  background: define a cor de fundo do botão
+  border: none - elimina a borda
+  border-radius: cria uma borda arredondada de 45px
+  box-shadow:  cria uma sombra no elemento com o tamnho e cor definida
+  transition: adiciona um efeito de transição com duração de 0.3segundos e o ease controla a rapides que ocorre
+  cursor: pointer indica que o elemento é "clicável"
+  outline: remove a borda de destaque (outline) do elemento quando ele é clicado ou focado*/
+  .card button{
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #000000;
+    background: #eb390d;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* Estilização o botão quando o mouse estiver em cima dele
+  background-color: a cor passa a ser a definida
+  box-shadow: cria uma sombra com o tamanho definido a cor informada
+  color: define a cor da fonte
+  transform: indica que o elemento será movido 7 pixels para cima em relação à sua posição original.*/
+  button:hover{
+    background-color: #ffffff;
+    box-shadow: 0px 15px 20px rgba(231, 25, 25, 0.884);
+    color: #070707;
+    transform: translateY(-7px);
+  }
+  
+  /*transform: indica que o elemento será movido -1 pixels para cima em relação à sua posição original*/
+  button:active{
+    transform: translateY(-1px);
+  }
+  
