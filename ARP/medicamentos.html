@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Listagem de Medicamentos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/medicamentos.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <!-- Criação de uma div aonde será inserido o logo da página -->
+                <div class="logo-wrapper">
+                    <!-- Criação de uma tag img para inserir o logo do AgroSafari, aonde a imagem é passada pelo atributo src -->
+                    <img alt="Logo" class="image" src="images/logo.png">
+                </div>
+                
+                <!-- Criação de uma tag menu para inserir os itens do menu da página -->
+                <div class="menu">
+                    <!-- Criação da tag nav para inserção dos elementos do menu -->
+                    <nav>
+                        <!-- Inserção dos elementos do menu através da tag a, que redirecionará para alguma outra página quando clicado -->
+                        <a href="cadastro.html">Cadastro</a>
+                        <a href="agendamento.html">Agendamento</a>
+                        <a href="pacientes.html">Pacientes</a>
+                        <a href="consultas.html">Consultas</a>
+                        <a href="medicamentos.html">Medicamentos</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+          
+          <form id="form-medicamento">
+            <div>
+                <h1>Cadastro de Medicamentos Interativo</h1>
+            </div>
+            
+            <input type="text" id="nome" required placeholder="Digite o nome do medicamento">
+            
+            <input type="text" id="dosagem" required placeholder="Digite a dosagem do medicamento">
+            <button type="submit">Adicionar</button>
+          </form>
+
+          <ul id="lista-medicamentos"></ul>
+        </div>
+        <script src="scripts/medicamentos.js"></script>
+      </body>
+</html>

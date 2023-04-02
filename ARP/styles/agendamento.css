@@ -1,0 +1,92 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+}
+
+.container {
+    padding: 20px;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 150px;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color:#0394d4;
+    padding-bottom: 40px;
+}
+
+.container form {
+	display: flex;
+	flex-direction: column;
+}
+
+.container label {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.container input[type="text"],
+select {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+
+/* Estilização do button dentro da classe card
+padding: define um espaçamento interno de 5px para todos os lados
+font-size: define um tamanho de 12px para a fonte
+text-transform: deixa todos os caracteres maiúsculos
+letter-spacing: define um espaçamento de 2.5px entre cada letra
+font-weight: define a intensidade da fonte
+color: define a cor da fonte
+background: define a cor de fundo do botão
+border: none - elimina a borda
+border-radius: cria uma borda arredondada de 45px
+box-shadow:  cria uma sombra no elemento com o tamnho e cor definida
+transition: adiciona um efeito de transição com duração de 0.3segundos e o ease controla a rapides que ocorre
+cursor: pointer indica que o elemento é "clicável"
+outline: remove a borda de destaque (outline) do elemento quando ele é clicado ou focado*/
+.container  button{
+    margin-top: 30px;
+    padding: 1.3em 3em;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #0394d4;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Estilização o botão quando o mouse estiver em cima dele
+  background-color: a cor passa a ser a definida
+  box-shadow: cria uma sombra com o tamanho definido a cor informada
+  color: define a cor da fonte
+  transform: indica que o elemento será movido 7 pixels para cima em relação à sua posição original.*/
+  .container  button:hover{
+    background-color: #9cd0e5;
+    box-shadow: 0px 15px 20px rgba(rgb(121, 161, 178), 0.884);
+    color: #ffffff;
+    transform: translateY(-7px);
+  }
+  
+  /*transform: indica que o elemento será movido -1 pixels para cima em relação à sua posição original*/
+  .container  button:active{
+    transform: translateY(-1px);
+  }

@@ -1,0 +1,118 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+}
+
+/*
+padding: define um espaçamento interno entre os elementos de 20px para todas as direções
+width: define um tamanho fixo de 550px
+margin: 0 auto - serve para alinhar o elemento ao centro
+border: none - remove a borda
+border-radius: cria uma borda arredondada de 45px
+box-shadow: cria uma sobra com o tamanho e cor informada
+display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+flex-direction: direção do display informado, no caso abaixo em colunas
+justify-content: conteúdo colocado no centro
+margin-bottom: espaçamento externo entre os elementos de 25px para todas as direções
+ */
+ .formulario {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 550px;
+  margin: 0 auto;
+  margin-top: 150px;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* Estilização do h1 dentro da classe formulario
+text-align: alinha o texto no centro
+font-size: define o tamanho de 2.5em para a fonte
+color: define a cor da fonte */
+.formulario h1
+{
+  text-align: center;
+  font-size: 3.0em;
+  color:#0394d4;
+  padding-bottom: 30px;
+}
+
+/* Estilização do label dentro da classe formulario
+display: block - é usado para fazer com que o elemento seja exibido como um bloco na página, ocupando toda a largura disponível do seu contêiner pai
+margin-bottom: define um espaçamento externo entre os elementos de 10px para todos os lados */
+.formulario label {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+/* Estilização do input, date e do tel dentro da classe formulario
+ display: block - é usado para fazer com que o elemento seja exibido como um bloco na página, ocupando toda a largura disponível do seu contêiner pai
+ width: define o tamanho fixo de 525 px
+ padding: define um espaçamento interno de 10px entre os elementos para todas as direções
+ border-radius: cria uma borda arredondada de 10px
+ border: cria uma borda de 1px, sólida e com a cor definida
+ margin-bottom: cria uma espaçamento inferior externo de 20px*/
+.formulario input,
+.formulario date,
+.formulario tel
+{
+  display: block;
+  width: 525px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* Estilização do button dentro da classe formulario
+padding: define um espaçamento interno de 5px para todos os lados
+font-size: define um tamanho de 12px para a fonte
+text-transform: deixa todos os caracteres maiúsculos
+letter-spacing: define um espaçamento de 2.5px entre cada letra
+font-weight: define a intensidade da fonte
+color: define a cor da fonte
+background: define a cor de fundo do botão
+border: none - elimina a borda
+border-radius: cria uma borda arredondada de 45px
+box-shadow:  cria uma sombra no elemento com o tamnho e cor definida
+transition: adiciona um efeito de transição com duração de 0.3segundos e o ease controla a rapides que ocorre
+cursor: pointer indica que o elemento é "clicável"
+outline: remove a borda de destaque (outline) do elemento quando ele é clicado ou focado*/
+.formulario button{
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #0394d4;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Estilização o botão quando o mouse estiver em cima dele
+background-color: a cor passa a ser a definida
+box-shadow: cria uma sombra com o tamanho definido a cor informada
+color: define a cor da fonte
+transform: indica que o elemento será movido 7 pixels para cima em relação à sua posição original.*/
+button:hover{
+  background-color: #9cd0e5;
+  box-shadow: 0px 15px 20px rgba(rgb(121, 161, 178), 0.884);
+  color: #ffffff;
+  transform: translateY(-7px);
+}
+
+/*transform: indica que o elemento será movido -1 pixels para cima em relação à sua posição original*/
+button:active{
+  transform: translateY(-1px);
+}

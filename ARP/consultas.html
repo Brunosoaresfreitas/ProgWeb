@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Consulta de Consultas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/consultas.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+        
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <!-- Criação de uma div aonde será inserido o logo da página -->
+                <div class="logo-wrapper">
+                    <!-- Criação de uma tag img para inserir o logo do AgroSafari, aonde a imagem é passada pelo atributo src -->
+                    <img alt="Logo" class="image" src="images/logo.png">
+                </div>
+                
+                <!-- Criação de uma tag menu para inserir os itens do menu da página -->
+                <div class="menu">
+                    <!-- Criação da tag nav para inserção dos elementos do menu -->
+                    <nav>
+                        <!-- Inserção dos elementos do menu através da tag a, que redirecionará para alguma outra página quando clicado -->
+                        <a href="cadastro.html">Cadastro</a>
+                        <a href="agendamento.html">Agendamento</a>
+                        <a href="pacientes.html">Pacientes</a>
+                        <a href="consultas.html">Consultas</a>
+                        <a href="medicamentos.html">Medicamentos</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="tabela-listagem">
+            <div>
+                <h1>Listagem de Consultas</h1>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Médico responsável</th>
+                        <th>Tipo da Consulta</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- Aqui serão inseridas as linhas da tabela -->
+                </tbody>
+            </table>
+        </div>
+
+    <script src="scripts/consultas.js"></script>
+    
+    </body>
+</html>

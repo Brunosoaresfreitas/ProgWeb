@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Consulta de Pacientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/pacientes.css">
+    </head>
+    <body>
+    
+        <header class="header">
+            <div class="wrapper">
+                <!-- Criação de uma div aonde será inserido o logo da página -->
+                <div class="logo-wrapper">
+                    <!-- Criação de uma tag img para inserir o logo do AgroSafari, aonde a imagem é passada pelo atributo src -->
+                    <img alt="Logo" class="image" src="images/logo.png">
+                </div>
+                
+                <!-- Criação de uma tag menu para inserir os itens do menu da página -->
+                <div class="menu">
+                    <!-- Criação da tag nav para inserção dos elementos do menu -->
+                    <nav>
+                        <!-- Inserção dos elementos do menu através da tag a, que redirecionará para alguma outra página quando clicado -->
+                        <a href="cadastro.html">Cadastro</a>
+                        <a href="agendamento.html">Agendamento</a>
+                        <a href="pacientes.html">Pacientes</a>
+                        <a href="consultas.html">Consultas</a>
+                        <a href="medicamentos.html">Medicamentos</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="tabela-listagem">
+            <div>
+                <h1>Listagem de Pacientes</h1>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                        <th>CPF</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- Aqui serão inseridas as linhas da tabela -->
+                </tbody>
+            </table>
+        </div>
+
+        <form class="search-container">
+            <!-- Criação de um input aonde será inserido o texto da pesquisa, com o placeholder informando o que deve ser inserido -->
+            <input type="text" id="busca" placeholder="Busce um paciente pelo nome ou CPF">
+            <!-- Criação de uma tag img aonde será colocado uma imagem de uma lupa para pesquisar, através do caminho informado no atributo src -->
+            <img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+        </form>
+    
+        <script src="scripts/pacientes.js"></script>
+    </body>
+</html>

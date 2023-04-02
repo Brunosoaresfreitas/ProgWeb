@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pacientes</title>
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="wrapper">
+            <!-- Criação de uma div aonde será inserido o logo da página -->
+            <div class="logo-wrapper">
+                <!-- Criação de uma tag img para inserir o logo do AgroSafari, aonde a imagem é passada pelo atributo src -->
+                <img alt="Logo" class="image" src="images/logo.png">
+            </div>
+            
+            <!-- Criação de uma tag menu para inserir os itens do menu da página -->
+            <div class="menu">
+                <!-- Criação da tag nav para inserção dos elementos do menu -->
+                <nav>
+                    <!-- Inserção dos elementos do menu através da tag a, que redirecionará para alguma outra página quando clicado -->
+                    <a href="cadastro.html">Cadastro</a>
+                    <a href="agendamento.html">Agendamento</a>
+                    <a href="pacientes.html">Pacientes</a>
+                    <a href="consultas.html">Consultas</a>
+                    <a href="medicamentos.html">Medicamentos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="formulario">
+        <form id="cadastro-paciente">
+            <div>
+                <h1>Cadastro de Paciente</h1>
+            </div>
+
+            <input required type="text" id="nome" placeholder="Nome completo"><br>
+            <input required type="date" id="data_nascimento" placeholder="Data de nascimento"><br>
+            <input required type="text" id="cpf" placeholder="CPF"><br>
+            <input required type="text" id="endereco" placeholder="Endereço"><br>
+            <input required type="tel" id="telefone" placeholder="Telefone"><br>
+    
+            <!-- Adicione outros campos necessários para o cadastro de paciente -->
+    
+            <center>
+                <button type="submit" value="Cadastrar">Cadastrar</button>
+            </center>
+        </form>
+    </div>
+
+    <script src="scripts/cadastro.js"></script>
+
+</body>
+</html>

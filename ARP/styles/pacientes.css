@@ -1,0 +1,99 @@
+.tabela-listagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.tabela-listagem table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+.tabela-listagem thead th {
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    background-color: #0394d4;
+}
+
+.tabela-listagem tbody td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-listagem tbody tr:hover {
+    background-color: #9cd0e5;
+}
+
+.tabela-listagem h1{
+    font-size: 35px;
+    padding-bottom: 30px;
+    color: #0394d4;
+}
+
+.search-container{
+    padding-top: 30px;
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* 
+  	margin: centraliza horizontalmente o elemento dentro de seu contêiner pai.
+	width: define a largura do elemento como 100% da largura do contêiner pai.
+	height: define a altura do elemento como 45 pixels.
+	padding: define o preenchimento interno esquerdo e direito do elemento como 20 pixels e zero pixels para cima e para baixo.
+	font-size: define o tamanho da fonte como o tamanho padrão do elemento pai.
+	border: define uma borda de 1 pixel sólida com a cor #D0CFCE ao redor do elemento.
+	outline: remove a borda destacada que aparece em alguns navegadores quando o elemento é selecionado.
+  */
+  .search-container >#busca{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+  }
+
+  /* 
+  	border-radius: define uma borda arredondada de 50px
+  */
+ .search-container > #busca
+  {
+	border-radius: 50px;
+  }
+
+  /* 
+ 	border-radiuds: define uma borda arredondada
+	border: define uma borda de 1px, sólida e com a cor informada
+	transition: define o efeito de transição
+	color: define a cor da fonte 
+  */
+    .search-container > #busca > input#busca:focus{
+	  border-radius: 5%;
+      border: 1px solid #000000;
+      transition: 0.35s ease;
+      color: #000000;
+  }
+
+  /* 
+  	position: relative;: define o posicionamento do elemento como relativo, ou seja, ele será posicionado em relação à sua posição original no fluxo do documento HTML.
+	float: right;: alinha o elemento à direita, fazendo com que outros elementos flutuem à esquerda dele.
+	width: 75px;: define a largura do elemento como 75 pixels.
+	height: 75px;: define a altura do elemento como 75 pixels.
+	top: -61px;: desloca o elemento 61 pixels para cima em relação à sua posição original.
+	right: -10px;: desloca o elemento 10 pixels para a esquerda em relação à borda direita do seu contêiner.
+  */
+  .search-container > .search-icon{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -61px;
+    right: -45px;
+  }

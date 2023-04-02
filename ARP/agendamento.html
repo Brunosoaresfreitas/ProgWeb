@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Agendamento de Consultas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/agendamento.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+    <body>
+
+        <header class="header">
+            <div class="wrapper">
+                <!-- Criação de uma div aonde será inserido o logo da página -->
+                <div class="logo-wrapper">
+                    <!-- Criação de uma tag img para inserir o logo do AgroSafari, aonde a imagem é passada pelo atributo src -->
+                    <img alt="Logo" class="image" src="images/logo.png">
+                </div>
+                
+                <!-- Criação de uma tag menu para inserir os itens do menu da página -->
+                <div class="menu">
+                    <!-- Criação da tag nav para inserção dos elementos do menu -->
+                    <nav>
+                        <!-- Inserção dos elementos do menu através da tag a, que redirecionará para alguma outra página quando clicado -->
+                        <a href="cadastro.html">Cadastro</a>
+                        <a href="agendamento.html">Agendamento</a>
+                        <a href="pacientes.html">Pacientes</a>
+                        <a href="consultas.html">Consultas</a>
+                        <a href="medicamentos.html">Medicamentos</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div>
+                <h1>Agendamento de Consultas</h1>
+            </div>
+    
+            <form id="agendamento-consulta">
+                <input type="text" id="datepicker" data-input="true" placeholder="Clique para selecionar a data do agendamento" readonly class="datepicker">
+    
+                <select id="medico" name="medico">
+                    <option value="" disabled selected>Selecione o médico da consulta</option>
+                    <option value="Dr. Carlos Antônio">Dr. Carlos Antônio</option>
+                    <option value="Dr. Pedro Paulo">Dr. Pedro Paulo</option>
+                    <option value="Dr. Júnior Abreu">Dr. Júnior Abreu</option>
+                    <option value="Dr. André Carlos">Dr. André Carlos</option>
+                </select>
+    
+                <select id="consulta" name="consulta">
+                    <option value="" disabled selected>Seleciona o tipo da consulta</option>
+                    <option value="Pediátrica">Pediátrica</option>
+                    <option value="Psquiátrica">Psquiátrica</option>
+                    <option value="Oftamológica">Oftamológica</option>
+                    <option value="Fisioterapêutica">Fisioterapêutica</option>
+                </select>
+                
+                <center>
+                    <button type="submit" id="agendar">Agendar Consulta</button>
+                </center>
+            </form>
+
+            <script src="scripts/agendamento.js"></script>
+        </div>
+    </body>
+</html>
