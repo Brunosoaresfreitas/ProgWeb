@@ -1,0 +1,124 @@
+:root{
+  --O-color: #2196f3;
+  --X-color: #f44336;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  
+}
+
+.title{
+  text-align: center;
+  font-size: 3rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1rem;
+}
+
+.board.game-over{
+  opacity: 0.8;
+}
+
+.cell{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 38%, #ffffff 100%);
+  
+  border-radius: 50px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00000066;
+
+  cursor: pointer;
+}
+
+.cell:not(.O):not(.X):hover{
+box-shadow: 0 20px 25px -5px rgb(0, 0, 0, 0.1), 0 10px 10px -5px  rgb(0, 0, 0, 0.1);
+}
+
+.cell.O, .cell.X, .game-over .cell{
+  cursor: not-allowed;
+}
+
+.cell.O{
+  background-color: #FFDEE9;
+}
+
+.cell.X{
+  background-color: #B5FFFC;
+}
+
+footer{
+  text-align: center;
+}
+
+.winner-message{
+  margin: 2rem;
+}
+
+.winner-message span .O{
+  color: var(--O-color);
+}
+
+.winner-message span .X{
+  color: var(--X-color);
+}
+
+ button{
+  margin-top: 20px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+ /* Estilização o botão quando o mouse estiver em cima dele
+background-color: a cor passa a ser a definida
+box-shadow: cria uma sombra com o tamanho definido a cor informada
+color: define a cor da fonte
+transform: indica que o elemento será movido 7 pixels para cima em relação à sua posição original.*/
+button:hover{
+  background-color: #B5FFFC;
+  box-shadow: 0px 15px 20px rgba(#FFDEE9, #B5FFFC, 12, 0.884);
+  color: #ffffff;
+  transform: translateY(-7px);
+}
+
+/*transform: indica que o elemento será movido -1 pixels para cima em relação à sua posição original*/
+button:active{
+  transform: translateY(-1px);
+}
