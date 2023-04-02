@@ -1,3 +1,9 @@
+/* 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Bruno Henrique Soares de Freitas 
+*/
+
 const startButton = document.querySelector('#start-button');
 
 // Seleciona o menu de start e o container do jogo
