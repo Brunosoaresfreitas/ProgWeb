@@ -1,0 +1,117 @@
+#start-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(45deg, #29df3e, #8fc0e6);
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #start-menu h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilização do button dentro da classe card
+  padding: define um espaçamento interno de 5px para todos os lados
+  font-size: define um tamanho de 12px para a fonte
+  text-transform: deixa todos os caracteres maiúsculos
+  letter-spacing: define um espaçamento de 2.5px entre cada letra
+  font-weight: define a intensidade da fonte
+  color: define a cor da fonte
+  background: define a cor de fundo do botão
+  border: none - elimina a borda
+  border-radius: cria uma borda arredondada de 45px
+  box-shadow:  cria uma sombra no elemento com o tamnho e cor definida
+  transition: adiciona um efeito de transição com duração de 0.3segundos e o ease controla a rapides que ocorre
+  cursor: pointer indica que o elemento é "clicável"
+  outline: remove a borda de destaque (outline) do elemento quando ele é clicado ou focado*/
+    button{
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #000000;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* Estilização o botão quando o mouse estiver em cima dele
+  background-color: a cor passa a ser a definida
+  box-shadow: cria uma sombra com o tamanho definido a cor informada
+  color: define a cor da fonte
+  transform: indica que o elemento será movido 7 pixels para cima em relação à sua posição original.*/
+  button:hover{
+    background-color: #ffffff;
+    box-shadow: 0px 15px 20px rgba(34, 161, 66, 0.884);
+    color: #070707;
+    transform: translateY(-7px);
+  }
+  
+  /*transform: indica que o elemento será movido -1 pixels para cima em relação à sua posição original*/
+  button:active{
+    transform: translateY(-1px);
+  }
+  
+  #game-container {
+    display: none;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    
+  }
+  
+  h3 {
+    padding: 20px;
+  }
+  
+  .tabuleiro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 550px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  
+  img {
+    padding: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
