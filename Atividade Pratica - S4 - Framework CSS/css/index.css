@@ -1,0 +1,168 @@
+/* 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Bruno Henrique Soares de Freitas 
+20/03/2003  
+*/
+
+/* Estilização da classe titulo-pag
+display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+background-color: define a cor de fundo
+text-align: alinha o texto no centro
+align-items: alinha os itens do container no centro
+justify-content: alinha o conteudo verticalmente dentro de um container flexível */
+.titulo-pag{
+    display: flex;
+    background-color: #e3dfe0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilização da tag h2 dentro da classe lista
+  margin-top: define um espaçamento superior interno de 40px
+  text-align: alinha o texto no centro */
+.lista h2{
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Estilização da classe conteudo
+display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+flex-direction: direção do display informado, no caso abaixo em colunas
+justify-content: alinha o conteudo verticalmente dentro de um container flexível
+align-content: alinha o conteúdo ao centro
+width: define um tamanho fixo
+margin: alinha o conteúdo verticalmente e horizontalmente
+font-size: define o tamanho da fonte */
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 98%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* Estilização da classe container
+display: flex - torna o container flexível, permitindo controlar o alinhamento e posicionamento dos itens
+flex-direction: direção do display informado, no caso abaixo em colunas
+justify-content: alinha o conteudo verticalmente dentro de um container flexível
+align-content: alinha o conteúdo ao centro
+ */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+/* Estilização da classe card
+background-color: define a cor de fundo
+color: define a cor da fonte
+padding: define o espaçamento interno de 10px entre os elementos para todos os lados
+margin: define o espaçamento externo de 10px para cima e para baixo e 5px para os lados
+border-radius: define uma borda arredondada de 15px
+height: define uma altura fixa de 350px */
+.card{
+    background-color: #c72121;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 15px;
+    height: 350px;
+}
+
+/* Estilização das classes cards
+height e width: define uma altura e um tamanho fixo de 100px */
+.card card1
+.card card2
+.card card3
+.card card4
+.card card5{
+    height: 100px;
+    width: 100px;
+}
+
+/* Estilização da tag img dentro da classe card dentro da classe container
+border-radius: cria uma borda arredondada de 20px */
+.container .card img{
+    border-radius: 20px;
+}
+
+/* Estilização da tag h1 dentro da classe descobertas
+text-alignt: alinha o texto ao centro
+font-weight: define a intensidade da fonte */
+.descobertas h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Estilização da classe .descobertas
+ justify-content: alinha o conteudo verticalmente dentro de um container flexível
+align-content: alinha o conteúdo ao centro
+padding: define um espaçamento interno de 25px para todos os lados
+background-color: define uma cor de fundo*/
+.descobertas{
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #e3dfe0;
+}
+
+/* Estilização do button dentro da classe descobertas
+  margin: define um espaçamento externo de 20px para todos os lados
+  padding: define um espaçamento interno de 1.3em para cima e para baixo e 3em para os lados
+  font-size: define um tamanho de 12px para a fonte
+  text-transform: deixa todos os caracteres maiúsculos
+  letter-spacing: define um espaçamento de 2.5px entre cada letra
+  font-weight: define a intensidade da fonte
+  color: define a cor da fonte
+  background: define a cor de fundo do botão
+  border: none - elimina a borda
+  border-radius: cria uma borda arredondada de 45px
+  box-shadow:  cria uma sombra no elemento com o tamnho e cor definida
+  transition: adiciona um efeito de transição com duração de 0.3segundos e o ease controla a rapides que ocorre
+  cursor: pointer indica que o elemento é "clicável"
+  outline: remove a borda de destaque (outline) do elemento quando ele é clicado ou focado*/
+.descobertas button{
+    margin-top: 20px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000000;
+    background: #ffffff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* Estilização o botão quando o mouse estiver em cima dele
+  background-color: a cor passa a ser a definida
+  box-shadow: cria uma sombra com o tamanho definido a cor informada
+  color: define a cor da fonte
+  transform: indica que o elemento será movido 7 pixels para cima em relação à sua posição original.*/
+  button:hover{
+    background-color: #eb390d;
+    box-shadow: 0px 15px 20px rgba(209, 58, 12, 0.884);
+    color: #ffffff;
+    transform: translateY(-7px);
+  }
+
+  /*transform: indica que o elemento será movido -1 pixels para cima em relação à sua posição original*/
+  button:active{
+    transform: translateY(-1px);
+  }
+
+  /* Estilização da tag a dentro da classe descobertas
+  text-decoration: elimina a decoração do texto (no caso o sublinhado do link) */
+  .descobertas a{
+    text-decoration: none;
+  }

@@ -1,0 +1,96 @@
+<!-- 
+    Curso de Engenharia de Software - UniEVANGÉLICA 
+    Disciplina de Programação Web 
+    Dev: Bruno Henrique Soares de Freitas 
+    20/03/2003 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de medicamentos</title>
+    <!-- Imports dos arquivos css utilizados para estilização -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Adicione os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Adicione os arquivos JS do Bootstrap -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js.map"></script>
+</head>
+<body>
+    <!-- A tag h1 foi utilizada para criar o título da página e a tag center foi
+    utilizada para centralizar o texto -->
+    <!-- para adicionar o estilo de tabela listrado, pode-se adicionar a classe table-striped na tag <table> -->
+    <!-- thead dark deixa o head da tabela em darkmode -->
+        <h1>Tabela de medicamentos</h1>
+    <div class="container">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Medicamento</th>
+                    <th>Indicação</th>
+                    <th>Dosagem</th>
+                    <th>Fabricante</th>
+                    <th>Cor</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Morfina</td>
+                    <td>A morfina é um remédio que tem um potente efeito no tratamento da dor crônica ou aguda muito intensa.</td>
+                    <td>5 mg via oral ou 2,5 mg em pacientes caquéticos, idosos frágeis ou com insuficiência renal.</td>
+                    <td>Teuto</td>
+                    <td>Preta</td>
+                    <td>Analgésicos</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Varfarina</td>
+                    <td>A varfarina É comumente usado para prevenir coágulos sanguíneos, como trombose venosa profunda e embolia pulmonar.</td>
+                    <td>2,5 mg a 5 mg ao dia</td>
+                    <td>Teuto</td>
+                    <td>Vermelha</td>
+                    <td>Anticoagulantes</td>
+                </tr>                    
+                <tr>
+                    <td>3</td>
+                    <td>Clorpromazina</td>
+                    <td>A clorpromazina é uma medicação psiquiátrica indicada geralmente para o controle de psicoses e tratamento de quadros psiquiátricos agudos.</td>
+                    <td>Iniciar com 30 a 75 mg por dia, divididos em 2 ou 4 doses.</td>
+                    <td>Neo Quimica</td>
+                    <td>Preta</td>
+                    <td>Antipsicóticos</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Nimesulidade</td>
+                    <td>A nimesulida é utilizada principalmente para aliviar dores leves a moderadas, reduzir a inflamação e baixar a febre.</td>
+                    <td>50 - 100mg a cada 12 horas.</td>
+                    <td>Vitamedic</td>
+                    <td>Vermelha</td>
+                    <td>Anti-inflamatórios</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Loratadina</td>
+                    <td>A Loratadina é indicada para o alívio dos sintomas associados com a rinite alérgica</td>
+                    <td>10 mL de loratadina (10 mg) uma vez por dia.</td>
+                    <td>Eurofarma</td>
+                    <td>Amarela</td>
+                    <td>Antibióticos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

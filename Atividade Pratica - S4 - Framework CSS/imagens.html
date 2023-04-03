@@ -1,0 +1,163 @@
+<!-- 
+    Curso de Engenharia de Software - UniEVANGÉLICA 
+    Disciplina de Programação Web 
+    Dev: Bruno Henrique Soares de Freitas 
+    20/03/2003 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/imagens.css">
+
+    <!-- Adicione os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+
+    <!-- Adicione os arquivos JS do Bootstrap -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js.map"></script>
+</head>
+<body>
+    <!-- Criação do header da página -->
+    <header class="header">
+      <div class="logo">
+        <!-- Inserção da imagem que será o logo da página -->
+        <img src="images/logo.jpg" alt="Logo do site">
+      </div>
+      
+      <!-- Criação de um menu de navegação -->
+      <nav class="link-menu">
+        <!-- Criação de uma lista ordenada para inserção dos itens do menu -->
+        <ul>
+          <!-- Inserção dos itens do menu, com a tag a utilizando o atributo href para redirecionar a página desejada -->
+          <li><a href="link.html">Home</a></li>
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="tabela.html">Tabela de Medicamentos</a></li>
+          <li><a href="formulario.html">Formulário para Cadastro de Medicamentos</a></li>
+          <li><a href="imagens.html">Imagens</a></li>
+          </ul>
+      </nav>
+        <div class="search">
+        <!-- Criação de um input com o atributo placeholder que será o que estará escrito dentro do input -->
+          <input type="text" placeholder="Pesquisar...">
+          <!-- Criação de um botão para pesquisar -->
+          <button>Pesquisar</button>
+        </div>
+    </header>
+
+    <div class="titulo-pag">
+            <!-- Tag strong para tornar o texto negrito e o h1 para criação do título -->
+            <strong><h1>Conhecendo um pouco mais sobre os medicamentos</h1></strong>
+    </div>
+    
+    <div>
+        <!-- Tag center para centralizar o conteúdo -->
+        <center>
+            <!-- Tag h2 para criação de um subtítulo -->
+            <h2>Você sabe o que significa cada tarja dos medicamentos?</h2>
+            <!-- Tag img para inserção de uma imagem passando o caminho dela no atributo src,
+            atributo width para terminar o tamanho da imagem e height para definir a altura da imagem-->
+            <img src="images/tarjas.png" alt="Imagem das tarjas dos medicamentos" width="400" height="250">
+        </center>
+        
+    </div>
+
+    <div>
+        <!-- Criação de uma lista não ordenada -->
+        <ul style="list-style-type: circle; color: navy; font-size: 18px;">
+            <!-- Inserção dos elementos da lista não ordenada, font-weight para tornar o texto negrito (bold) -->
+                <li style="color: gold; font-weight: bold;">Tarja amarela: é a mais branda e indica que o medicamento pode ser vendido sem receita médica, mas deve ser usado com cautela e orientação do farmacêutico.</li>
+                <li style="color: black; font-weight: bold;">Tarja preta: é a mais restritiva e indica que o medicamento é de venda controlada, ou seja, só pode ser comprado com receita médica.</li>
+                <li style="color: red; font-weight: bold;">Tarja vermelha: é menos restritiva e indica que o medicamento pode ser vendido sem receita médica, mas ainda assim requer cuidado e orientação de um profissional de saúde.</li>
+          </ul>
+    </div>
+
+    <div class="empresas">
+      <!-- Criação do título desse bloco dentro da div utilizando a tag h1 -->
+      <h1>Conheça agora as maiores empresas farmacêuticas do Brasil</h2>
+      <!-- Definição de uma div que conterá os cards, que serão estilizados pela classe container -->
+      <div class="container">
+        <!-- Criação da div que conterá cada card -->
+        <div class=card card1>
+          <!-- Inserção da imagem e definição do tamanho e altura através dos atributos width e height -->
+          <img src="images/neoquimica.jpg" alt="Neo Quimica" width="360" height="250">
+          <!-- Tag h2 para definição do tamanho do texto -->
+          <h2>1°: Neo Química</h2>
+        </div>
+        <!-- Criação da div que conterá cada card -->
+        <div class=card card2>
+          <!-- Inserção da imagem e definição do tamanho e altura através dos atributos width e height -->
+          <img src="images/cimed.jpeg" alt="Cimed" width="360" height="250">
+          <!-- Tag h2 para definição do tamanho do texto -->
+          <h2>2°: CIMED</h2>
+        </div>
+        <div class=card card3>
+          <!-- Inserção da imagem e definição do tamanho e altura através dos atributos width e height -->
+          <img src="images/ems.jpg" alt="EMS" width="360" height="250">
+          <!-- Tag h2 para definição do tamanho do texto -->
+          <h2>3°: EMS</h2>
+        </div>
+      </div>
+      <!-- Tag center utilizada para centralizar o conteúdo -->
+      <center>
+        <!-- Criação de um parágrafo para inserção de um texto simples -->
+        <p>O ranking das 20 maiores farmacêuticas do Brasil em vendas de unidades reúne 17 fabricantes de origem nacional. As brasileiras, inclusive, ocupam as oito primeiras colocações, considerando os últimos 12 meses até maio. Em relação ao mesmo período anterior, a Neo Química ampliou a liderança, com 463,6 milhões de unidades e crescimento de 15,35%. A segunda colocada Cimed avançou somente 7,53%. EMS, Eurofarma e Aché completam o top 5. A União Química subiu duas posições e a Natulab ingressou no ranking após incremento superior a 42%.</p>
+        <!-- Criação de um botão que redirecionará para um site externo através da tag a e o atributo href contendo o link do site externo -->
+        <button><a href="https://www.abradilan.com.br/mercado/das-20-maiores-farmaceuticas-do-brasil-17-sao-nacionais/">Leia mais sobre o assunto</a></button>
+      </center>
+    </div>
+
+    <div class="ranking-faturamento">
+        <!-- Tag h2 para criação de um subtítulo -->
+        <h2>Conheça agora as maiores farmacêuticas do Brasil em faturamento</h2>
+        <!-- Tag p para criação de um parágrafo contendo um texto simples -->
+        <p>
+            Já o ranking das 20 maiores em faturamento contempla 15 laboratórios genuinamente brasileiros, contra cinco multinacionais 
+            ou farmacêuticas pertencentes a grupos estrangeiros. EMS e Eurofarma mantêm uma disputa acirrada pela primeira colocação, 
+            com R$ 10,72 bilhões e R$ 10,67 bilhões, respectivamente.
+        </p>
+        <!-- Tag p para criação de um parágrafo contendo um texto simples -->
+        <p>
+            As companhias estrangeiras mais bem posicionadas são a Sanofi, na sexta colocação, com R$ 3,94 bilhões; e a Novo Nordisk (R$ 3,63 bi).
+        </p>
+        <!-- Tag center para centralizar o conteúdo -->
+        <center>
+            <!-- Tag img para inserção de uma imagem passando o caminho dela no atributo src -->
+            <img src="images/ranking-faturamento.jpg" alt="Ranking de faturamento das empresas farmacêuticas">
+            <p>Ranking de Faturamento | Vendas em R$ bi</p>
+        </center>
+    </div>
+
+    <!-- Criação do rodapé da página -->
+    <footer>
+      <!-- Criação de uma div com a classe container que será utilizada no css para estilização -->
+      <div class="container">
+          <div class="contact-info">
+              <!-- Tag h4 para definir o tamanho do texto -->
+              <h4>Contato</h4>
+              <!-- Criação de uma lista não ordenada -->
+              <ul>
+                  <!-- Inserção de dados na lista criada -->
+                  <li>Telefone: (11) 1234-5678</li>
+                  <li>Email: brunosoaresfreitas@meusite.com</li>
+              </ul>
+          </div>
+          <!-- Criação de uma div que será estilizada pela classe search-box -->
+          <div class="search-box">
+              <!-- Criação de um formulário -->
+              <form>
+                  <!-- Input para digitar uma pesquisa -->
+                  <input type="text" placeholder="Digite sua pesquisa aqui">
+                  <!-- Criação de um botão para buscar o que foi pesquisado -->
+                  <button type="submit">Buscar</button>
+              </form>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
