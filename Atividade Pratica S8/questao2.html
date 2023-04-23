@@ -1,0 +1,49 @@
+<!-- 
+    Aluno: Bruno Henrique Soares de Freitas
+    Matrícula: 2110778
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="questao2.css">
+</head>
+<body>
+    <h1>Minha Lista</h1>
+    <ul id="minha-lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <label for="novo-item">Adicionar novo item:</label>
+    <input type="text" id="novo-item" name="novo-item" placeholder="Digite o nome do novo item...">
+    <input class="buttonsend" type="button" value="Adicionar" onclick="adicionarItem()">
+    <script>
+        function adicionarItem()
+        {
+            // Capturar o valor do input
+            var novoItem = document.getElementById("novo-item").value;
+
+            // Verificar se o campo de texto está vazio
+            if (novoItem === "") {
+                alert("Por favor, digite o nome do novo item.");
+                return;
+            }
+
+            // Criar um novo elemento li
+            var li = document.createElement("li");
+
+            // Adicionar o novo item à lista
+            li.appendChild(document.createTextNode(novoItem));
+            document.getElementById("minha-lista").appendChild(li);
+
+            // Resetar o valor do input
+            document.getElementById("novo-item").value = "";
+        }
+    </script>
+</body>
+</html>

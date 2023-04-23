@@ -1,0 +1,99 @@
+/*  
+    Aluno: Bruno Henrique Soares de Freitas
+    Matrícula: 2110778
+*/
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.left-side, .right-side{
+    flex: 1;
+}
+
+.left-side {
+    
+    padding-right: 20px;
+}
+
+.formulario{
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgb(155, 152, 152);
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+.buttonsend{
+    color: #ffffff;
+    background-color: green;
+}
+
+input[type="text"]{
+    margin-top: 5px;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.check input[type="checkbox"] {
+    float: left;
+    margin-right: 10px;
+}
+
+.buttonsend{
+    width: 100px;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+}
+
+.check {
+    overflow: auto;
+}
+
+select{
+    margin-top: 5px;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.first-block{
+    border: 1px solid rgb(155, 152, 152);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.second-block{
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgb(155, 152, 152);
+    font-weight: 700;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    font-weight: 700;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  td {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+
