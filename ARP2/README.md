@@ -52,7 +52,6 @@ Algum editor para trabalhar com o código, como por exemplo o [Visual Studio](ht
 
 ```
 # Clone este repositório
-$ git clone https://github.com/Brunosoaresfreitas/ARP.git
 
 # Navegue pelo cmd até a pasta que contém o arquivo principal do projeto
 
@@ -88,4 +87,4 @@ As seguintes tecnologias e métodos foram utilizadas durante o desenvolvimento d
 <a href="https://www.linkedin.com/in/bruno-henrique-soares-de-freitas-32ab85243/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
 
 ## 📁 Acesso ao projeto
-Você pode acessar os arquivos do projeto clicando [aqui]([https://github.com/Brunosoaresfreitas/RemediosIO/tree/main/RemediosIO](https://github.com/Brunosoaresfreitas/ARP/tree/main/ClinicaMedicaAPI)).
+Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/Brunosoaresfreitas/ProgWeb/tree/main/ARP2/ClinicaMedicaAPI).
