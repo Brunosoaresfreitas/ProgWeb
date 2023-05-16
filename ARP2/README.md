@@ -14,8 +14,18 @@
 
 ## Documentação da API 
 
+### Endpoints:
+![Imagem dos endpoints1](./Images/DocumentaçãoSwagger.png)
 
-
+### Testando os endpoints de paciente
+* Get Paciente (Obter todos os pacientes cadastrados):
+![Get Paciente](./Images/ExemploGet.png)
+* Post Paciente (Cadastrar um novo paciente):
+![Post Paciente](./Images/ExemploPost.png)
+* Get Paciente por Id (Obter um paciente pelo seu Id):
+![Get Paciente By Id](./Images/ExemploGetPorId.png)
+* Delete Paciente (Excluir um paciente):
+![Delete Paciente](./Images/ExemploDelete.png)
 
 ## 💻 Sobre o projeto
 
