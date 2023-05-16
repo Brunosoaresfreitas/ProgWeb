@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "95uHZ5z64SpbHxeb0LfG7HawV/HZRIhoMwxLfnA/F2sxxD6G6VHASz9HFlIa0/dti7ovwfajyEFdesM0HnyFcQ==",
+  "dgSpecHash": "WqLn0ARaPprrboj4OlA2HUf4bIna8VTHIT+DSHpkxrp7xw5oQ27dynlGPrFSOYn67t14wEcGNug5pKjl2jUZ5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruno\\Desktop\\ProjetoIntegrador\\ClinicaMedicaAPI\\ClinicaMedicaAPI\\ClinicaMedicaAPI.csproj",
+  "projectFilePath": "C:\\Users\\Bruno\\Desktop\\ProgWeb\\ARP2\\ClinicaMedicaAPI\\ClinicaMedicaAPI\\ClinicaMedicaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.16\\microsoft.entityframeworkcore.6.0.16.nupkg.sha512",
     "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.16\\microsoft.entityframeworkcore.abstractions.6.0.16.nupkg.sha512",
